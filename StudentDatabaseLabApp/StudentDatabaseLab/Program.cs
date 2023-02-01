@@ -44,15 +44,16 @@ do
             String? SearchStudent = Console.ReadLine();
             if (SearchStudent.ToLower() == "y")
             {
+                SearchOption = true;
                 Console.Write("Please enter the Name: ");
                 String? StudentName = Console.ReadLine();
                 for (int i = 0;i < Name.Length; i++)
                 {
                     if (StudentName.ToLower() == Name[i].ToLower())
                     {
-                        UserEnteredNumber = i + 1;
-                        SearchOption = true;
+                        UserEnteredNumber = i + 1;                        
                         ValidOption = true;
+                    break;
                         
                     }
                     
